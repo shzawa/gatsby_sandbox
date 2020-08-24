@@ -11,8 +11,7 @@ module.exports = {
       twitter: `kylemathews`,
     },
   },
-  plugins: [
-    {
+  plugins: [{
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/blog`,
@@ -30,6 +29,17 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          `gatsby-remark-code-titles`,
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              classPrefix: "language-",
+              inlineCodeMarker: null,
+              aliases: {},
+              showLineNumbers: true,
+              noInlineHighlight: false,
+            }
+          },
           {
             resolve: `gatsby-remark-images`,
             options: {
@@ -42,7 +52,12 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
-          `gatsby-remark-prismjs`,
+          {
+            resolve: `gatsby-plugin-google-analytics`,
+            options: {
+              trackingId: "UA-176160797-1"
+            }
+          }
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
         ],
