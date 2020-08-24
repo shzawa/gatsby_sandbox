@@ -57,7 +57,7 @@ module.exports = {
             options: {
               trackingId: "UA-176160797-1"
             }
-          }
+          },
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
         ],
