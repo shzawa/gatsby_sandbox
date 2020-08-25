@@ -1,0 +1,26 @@
+.tags {
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+  margin-left: 0;
+  list-style-type: none;
+  font-size: 0;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.tag {
+  display: inline;
+  border-radius: 4px;
+  padding: .5rem;
+  margin-right: 1rem;
+  font-size: .7rem;
+  background-color: #f7f7f7;
+  color: #333333;
+  text-align: center;
+}
+
+.tag:hover {
+  background: #e4e4e4;
+}
