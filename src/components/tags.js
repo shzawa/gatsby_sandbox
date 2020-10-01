@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import kebabCase from 'lodash/kebabCase';
 
 import styles from './tags.module.scss';
 
