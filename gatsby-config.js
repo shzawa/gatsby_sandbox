@@ -39,7 +39,7 @@ module.exports = {
               aliases: {},
               showLineNumbers: true,
               noInlineHighlight: false,
-            }
+            },
           },
           {
             resolve: `gatsby-remark-images`,
@@ -56,8 +56,8 @@ module.exports = {
           {
             resolve: `gatsby-plugin-google-analytics`,
             options: {
-              trackingId: "UA-176160797-1"
-            }
+              trackingId: "UA-176160797-1",
+            },
           },
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
@@ -93,9 +93,9 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
-    `gatsby-plugin-twitter`
-    // this (optional) plugin enables Progressive Web App + Offline functionality
+    `gatsby-plugin-twitter`// this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    `gatsby-plugin-sitemap`,
   ],
 }
