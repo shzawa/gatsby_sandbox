@@ -6,7 +6,7 @@ module.exports = {
       summary: ``,
     },
     description: ``,
-    siteUrl: `https://tkzawa.xyz/`,
+    siteUrl: `https://tkzawa.netlify.app/`,
     social: {
       twitter: `tk_zawa`,
     },
