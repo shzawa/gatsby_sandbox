@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 
 // Components
 import { Link, graphql } from "gatsby"
+import { Helmet } from "react-helmet"
 import Layout from "../components/layout"
 
 const Tags = ({ pageContext, data, location }) => {
@@ -15,6 +16,7 @@ const Tags = ({ pageContext, data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
+      <Helmet title={siteTitle} titleTemplate={`"${tag}" | ${siteTitle}`} />
       <h2>{tagHeader}</h2>
       <ul>
         {edges.map(({ node }) => {
