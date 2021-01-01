@@ -20,8 +20,8 @@ const TagsPage = ({
 }) => {
   return (
     <div>
-      <Helmet title={title} />
       <Layout location={location} title={title}>
+        <Helmet title={title} titleTemplate={`All tags | ${title}`} />
         <h1>Tags</h1>
         <ul>
           {group.map(tag => (
