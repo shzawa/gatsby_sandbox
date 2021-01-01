@@ -19,21 +19,19 @@ const TagsPage = ({
   location,
 }) => {
   return (
-    <div>
-      <Layout location={location} title={title}>
-        <Helmet title={title} titleTemplate={`All tags | ${title}`} />
-        <h1>Tags</h1>
-        <ul>
-          {group.map(tag => (
-            <li key={tag.fieldValue}>
-              <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
-                {tag.fieldValue} ({tag.totalCount})
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </Layout>
-    </div>
+    <Layout location={location} title={title}>
+      <Helmet title={title} titleTemplate={`All tags | ${title}`} />
+      <h1>Tags</h1>
+      <ul>
+        {group.map(tag => (
+          <li key={tag.fieldValue}>
+            <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
+              {tag.fieldValue} ({tag.totalCount})
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </Layout>
   )
 }
 
